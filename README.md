@@ -4,6 +4,7 @@
 
 Reinforcment learning model
 
+~~~
              +-----------+
   +--------->|           |
   |          |   Agent   |---------+
@@ -17,6 +18,7 @@ Reinforcment learning model
   |      |    Environment    |<----+
   +------|                   |
          +-------------------+
+~~~
 
 Agent stier rover, the environment is a plane (scaned target)
 
