@@ -1,35 +1,23 @@
-from rover import Rover
-from agent import RLAgent
-from envinronment import Env
+"""Run: python main.py"""
+import sys
+import torch
+from PySide6.QtWidgets import QApplication
+from PySide6.QtCore import QLocale
+from window import Demo
 
-import os
 
-from matplotlib import pyplot as plt
-import numpy as np
+def main():
+    # Small MLP: avoid using all CPU cores and starving the Qt event loop.
+    # Set before constructing a model or running autograd.
+    torch.set_num_threads(1)
+    QLocale.setDefault(QLocale(QLocale.Language.English, QLocale.Country.UnitedStates))
+    app = QApplication(sys.argv)
+    app.setApplicationName("PPO Rover Lab")
+    app.setStyle("Fusion")
+    window = Demo()
+    window.show()
+    return app.exec()
 
-# test
-rover = Rover(0, 0, 0, False)
-rover.move(1, 1)
-rover.move(1, 0)
-rover.move(0, 1)
 
-plane = plt.Circle((40, 60), 30, color = "blue", alpha = 0.2, label = "circle workspace")
-trian = plt.Polygon(((1,0), (0,1), (1,1)), color = "green", alpha = 0.2, label = "triangle workspace")
-
-agent = RLAgent(rover)
-agent.train()
-
-plt.figure("Rover path")
-plt.gca().add_patch(plane)
-plt.gca().add_patch(trian)
-plt.plot(rover.x_list, rover.y_list, label = "rover movement")
-
-plt.xlim(0,100)
-plt.ylim(0,100)
-plt.title("Rover movment")
-plt.xlabel("x")
-plt.ylabel("y")
-plt.legend()
-
-plt.show()
-
+if __name__ == "__main__":
+    sys.exit(main())

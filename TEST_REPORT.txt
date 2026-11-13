@@ -1,0 +1,36 @@
+PPO Rover Lab — English/explicit-geometry release
+
+Python: 3.13.5
+PyTorch: 2.10.0+cpu
+NumPy: 2.3.5
+Matplotlib: 3.10.8
+pytest: 9.0.2
+PySide6: not installed in this execution environment.
+Qt GUI: not launched; Qt test module skipped.
+Package installation was attempted but network/PyPI access was unavailable.
+CUDA: not tested; CPU-only build.
+
+Executed: MPLBACKEND=Agg python -m pytest -q tests
+....................................................................     [100%]
+68 passed, 1 skipped in 2.51s
+
+Compileall: success.
+
+agent.py: byte-identical to the previous working GUI archive.
+new_rover.py: byte-identical to the previous working GUI archive.
+worker.py: byte-identical to the previous working GUI archive.
+
+Verified:
+- All five target masks, outline generation and coordinate placement.
+- Circle/ellipse radii, arbitrary triangle vertices, either corner order.
+- Square equal-side validation, bounds, degenerate targets and empty masks.
+- Exact rover X/Y start and reset; start outside target remains permitted.
+- Full laser sweep, turns, reward logic, default-environment regression.
+- PPO training smoke tests, weight updates, evaluation and stop handling.
+- Geometry checkpoint roundtrips and legacy configuration migration.
+- Existing Matplotlib artists update without accumulating new axes.
+- Five individual headless preview images rendered successfully.
+
+Not verified: new Qt widgets at runtime, GPU execution, local X11/Wayland.
+No long training benchmark or guarantee of policy convergence is claimed.
+Preview image paths are scripted, not outputs from trained policies.
