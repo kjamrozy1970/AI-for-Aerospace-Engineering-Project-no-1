@@ -1,0 +1,4 @@
+\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
+\beamer@sectionintoc {2}{System design}{4}{0}{2}
+\beamer@sectionintoc {3}{Communication architecture}{5}{0}{3}
+\beamer@sectionintoc {4}{AI development}{6}{0}{4}
