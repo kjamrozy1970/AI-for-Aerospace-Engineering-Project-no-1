@@ -1,0 +1,42 @@
+\begin{thebibliography}{5}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{Chandrajit L. Bajaj}(1994)]{chandrajit1994geometry}
+{Chandrajit L. Bajaj}.
+\newblock Algebric geometry and its applications, 1994.
+
+\bibitem[{Lasse Damtoft Nielsen, Inkyung Sung and Peter Nielsen}(25 September
+  2019)]{mdpi2019convex}
+{Lasse Damtoft Nielsen, Inkyung Sung and Peter Nielsen}.
+\newblock Convex decomposition for a coverage path planning for autonomous
+  vehicles: Interior extension of edges.
+\newblock \emph{Sensors 2019, 19(19), 4165}, 25 September 2019.
+
+\bibitem[{Ercan U. Acar, Howie Choset, Alfread A. Rizzi, Prasad N. Atkar and
+  Douglas Hull}(April 2002)]{carriege2002morse}
+{Ercan U. Acar, Howie Choset, Alfread A. Rizzi, Prasad N. Atkar and Douglas
+  Hull}.
+\newblock Morse decompositions for covarage task.
+\newblock \emph{The International Journal of Robotics Reaserch Vol. 21, No 4,
+  P. P. 331-344}, April 2002.
+
+\bibitem[{Hadeel Khudhur Al-Ahmedy, Saif Alabachi and Ibrahim Adel
+  Ibrahim}(2025)]{kufa2025pathplanning}
+{Hadeel Khudhur Al-Ahmedy, Saif Alabachi and Ibrahim Adel Ibrahim}.
+\newblock Dynamic task allocation and path planning in single-agent robot with
+  cloud computing a survey.
+\newblock \emph{Kufa Journal of Engineering Vol. 16, No. 4, P. P. 302-334},
+  2025.
+
+\bibitem[{Schulman, John and Wolski, Filip and Dhariwal, Prafulla and Radford,
+  Alec and Klimov, Oleg}(2017)]{schulman2017ppo}
+{Schulman, John and Wolski, Filip and Dhariwal, Prafulla and Radford, Alec and
+  Klimov, Oleg}.
+\newblock Proximal policy optimization algorithms.
+\newblock \emph{arXiv preprint arXiv:1707.06347}, 2017.
+
+\end{thebibliography}
